@@ -1,9 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-version = "0.1.0"
-def siteUrl = 'https://github.com/ldoublem/LoadingView'
-def gitUrl = 'https://github.com/ldoublem/LoadingView.git'
+version = "0.1.1"
+def siteUrl = 'https://github.com/KIDvsWEI/firstlib'
+def gitUrl = 'https://github.com/KIDvsWEI/firstlib.git'
 group = "com.yw.gril"
 
 android {
