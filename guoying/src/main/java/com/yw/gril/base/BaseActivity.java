@@ -6,8 +6,6 @@ import android.support.v4.app.FragmentActivity;
 import android.util.SparseArray;
 import android.view.View;
 
-import com.yw.gril.Units.ActivityCollector;
-
 /**
  * Created by 伟 on 2017/3/30.
  */
@@ -30,13 +28,11 @@ public abstract class BaseActivity extends FragmentActivity implements View.OnCl
         initListener();
         initData();
 
-        ActivityCollector.addActivity(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        ActivityCollector.removeActivity(this);
     }
 
     /**
