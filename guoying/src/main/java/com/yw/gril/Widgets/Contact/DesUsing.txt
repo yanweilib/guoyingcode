@@ -1,0 +1,165 @@
+说明：
+    微信 联系人
+
+使用：
+
+    layout:
+           <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lv_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+            <com.yungui.kindergarten.view.yahei.CustomFontYaHeiTextView
+                android:id="@+id/tv_current_letter"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#3CAC48"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="A"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:visibility="gone" />
+
+            <com.yungui.kindergarten.view.contact.SideBar
+                android:id="@+id/sb_bar"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+    activity：
+            private ListView lv_view;
+            private TextView tv_current_letter;
+            private SideBar sb_bar;
+            private SideBarAdapter myAdapter;
+
+        private void initView()
+        {
+              lv_view = (ListView) findViewById(R.id.lv_view);
+                tv_current_letter = (TextView) findViewById(R.id.tv_current_letter);
+                sb_bar = (SideBar) findViewById(R.id.sb_bar);
+        }
+
+  private void initDate()
+    {
+        setCallbackInterface();
+
+        List<ContactsModel> list = initData();
+
+        chineseToPinyin(list);
+
+        //将联系人列表的标题字母排序
+        Collections.sort(list, new Comparator<ContactsModel>() {
+            @Override
+            public int compare(ContactsModel lhs, ContactsModel rhs) {
+                return lhs.getFirstLetter().compareTo(rhs.getFirstLetter());
+            }
+        });
+
+
+        //将联系人列表的标题字母放到List<String>列表中，准备数据去重
+        List<String> getLetter = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            getLetter.add(list.get(i).getFirstLetter());
+        }
+
+        //数据去重
+        getLetter = removeDuplicate(getLetter);
+
+        //将联系人列表的字母标题排序
+        Collections.sort(getLetter, new Comparator<String>() {
+            @Override
+            public int compare(String lhs, String rhs) {
+                return lhs.compareTo(rhs);
+            }
+        });
+
+        //设置已排序好的标题
+        sb_bar.setLetter(getLetter);
+
+
+        myAdapter = new SideBarAdapter(this, list, R.layout.adapter_side_bar);
+        lv_view.setAdapter(myAdapter);
+    }
+
+
+    /**
+     * 将中文转化为拼音
+     */
+    public void chineseToPinyin(List<ContactsModel> list) {
+        for (int i = 0; i < list.size(); i++) {
+            ContactsModel contactsModel1 = list.get(i);
+            //将汉字转换为拼音
+            String pinyinString = PinyinHelper.getShortPinyin(list.get(i).getName());
+            //将拼音字符串转换为大写拼音
+            String upperCasePinyinString = String.valueOf(pinyinString.charAt(0)).toUpperCase();
+            //获取大写拼音字符串的第一个字符
+            char tempChar = upperCasePinyinString.charAt(0);
+
+            if (tempChar < 'A' || tempChar > 'Z') {
+                contactsModel1.setFirstLetter("#");
+            } else {
+                contactsModel1.setFirstLetter(String.valueOf(tempChar));
+            }
+        }
+    }
+
+    /**
+     * 设置回调接口
+     */
+    public void setCallbackInterface() {
+        //回调接口
+        sb_bar.setOnCurrentLetterListener(new SideBar.OnCurrentLetterListener() {
+            @Override
+            public void showCurrentLetter(String currentLetter) {
+                tv_current_letter.setVisibility(View.VISIBLE);
+                tv_current_letter.setText(currentLetter);
+
+                int position = myAdapter.getCurrentLetterPosition(currentLetter);
+                if (position != -1)
+                    lv_view.setSelection(position);
+            }
+
+            @Override
+            public void hideCurrentLetter() {
+                tv_current_letter.setVisibility(View.GONE);
+            }
+        });
+    }
+
+    /**
+     * 初始化数据
+     */
+    public List<ContactsModel> initData() {
+        List<ContactsModel> list = new ArrayList<>();
+
+        ContactsModel contactsModel;
+        String[] nameStrings = {"覃", "岑", "$来啊，来互相伤害啊", "疍姬", "梵蒂冈", "亳州", "佟", "郄", "张三", "Edward", "李四", "萌萌哒", "霾耷", "离散", "赵信", "啦啦", "辣妹子", "嗷嗷", "妹妹", "']asd", "%Hello"};
+        for (int i = 0; i < nameStrings.length; i++) {
+            contactsModel = new ContactsModel();
+            contactsModel.setName(nameStrings[i]);
+            list.add(contactsModel);
+        }
+        return list;
+    }
+
+    /**
+     * 去重数据
+     *
+     * @param list
+     * @param <T>
+     * @return
+     */
+    public <T> List<T> removeDuplicate(List<T> list) {
+
+        Set<T> h = new HashSet<>(list);
+        list.clear();
+        list.addAll(h);
+        return list;
+
+    }

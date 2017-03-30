@@ -1,0 +1,17 @@
+说明：
+    通用标题栏
+
+使用：
+    <com.yungui.kindergarten.view.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:title_text="相册详情"
+        my:left_text="返回">
+    </com.yungui.kindergarten.view.TitleBar>
+
+
+    implements View.OnClickListener ,TitleBar.TitleBarClickListener
+
+    tb_title= (TitleBar) findViewById(R.id.tb_title);
+    tb_title.setTopBarClickListener(this);

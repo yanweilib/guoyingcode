@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <com.renrensai.billiards.tools.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.renrensai.billiards.view.CustomFontYaHeiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="165dp"
+            android:text=""
+            android:textColor="#9F9F9F"
+            android:textSize="27sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/c00000000">
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp" />
+
+            <com.renrensai.billiards.view.CustomFontYaHeiTextView
+                android:id="@+id/textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="扫一扫"
+                android:textColor="@color/cFFFFFF"
+                android:textSize="34sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlay_openflashlight"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <com.renrensai.billiards.view.CustomFontYaHeiTextView
+                android:id="@+id/tv_openflashlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="打开灯"
+                android:textColor="@color/cFFFFFF"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="325dp"
+            android:layout_height="325dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="107dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/refresh_init"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bg_init"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/c282828"
+        android:visibility="gone" />
+
+</FrameLayout>

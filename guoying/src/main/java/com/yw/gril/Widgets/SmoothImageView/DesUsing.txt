@@ -1,0 +1,19 @@
+说明：
+    点击图片会放大
+
+使用：
+    点击+跳转 SpaceImageDetailActivity
+
+ String url= (String) view.getTag(R.id.adapterDate);
+        Intent intent = new Intent(context, SpaceImageDetailActivity.class);
+        intent.putExtra("images", url);//非必须
+        intent.putExtra("position", 12);
+        int[] location = new int[2];
+        view.getLocationOnScreen(location);
+        intent.putExtra("locationX", location[0]);//必须
+        intent.putExtra("locationY", location[1]);//必须
+
+        intent.putExtra("width", view.getWidth());//必须
+        intent.putExtra("height", view.getHeight());//必须
+        context.startActivity(intent);
+        ((Activity)context).overridePendingTransition(0, 0);
