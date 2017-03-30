@@ -1,4 +1,4 @@
-package com.example.androidcode.Units;
+package com.yw.gril.Units;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -6,13 +6,13 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.os.Environment;
 
-import com.example.androidcode.R;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import com.yw.gril.R;
 
 import java.io.File;
 import java.io.FileOutputStream;

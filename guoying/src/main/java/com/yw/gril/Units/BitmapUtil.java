@@ -1,4 +1,4 @@
-package com.example.androidcode.Units;
+package com.yw.gril.Units;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -10,8 +10,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
 import android.view.View;
-
-import com.example.androidcode.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

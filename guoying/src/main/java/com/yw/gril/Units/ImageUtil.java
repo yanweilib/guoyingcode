@@ -1,4 +1,4 @@
-package com.example.androidcode.Units;
+package com.yw.gril.Units;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,7 +16,7 @@ import android.graphics.RectF;
 import android.media.ExifInterface;
 import android.net.Uri;
 
-import com.example.androidcode.R;
+import com.yw.gril.R;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

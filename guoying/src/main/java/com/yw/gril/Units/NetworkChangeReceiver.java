@@ -1,4 +1,4 @@
-package com.example.androidcode.Units;
+package com.yw.gril.Units;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.widget.Toast;
-
-import com.example.androidcode.R;
 
 /**
  * Created by 伟 on 2016/5/19.

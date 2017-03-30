@@ -1,4 +1,4 @@
-package com.example.androidcode.Units;
+package com.yw.gril.Units;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.example.androidcode.Units.StringUtil.isEmpty;
+import static com.yw.gril.Units.StringUtil.isEmpty;
 
 /**
  * Created by 伟 on 2016/12/12.

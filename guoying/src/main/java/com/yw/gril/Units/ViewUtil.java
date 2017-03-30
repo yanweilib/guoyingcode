@@ -1,4 +1,4 @@
-package com.example.androidcode.Units;
+package com.yw.gril.Units;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -21,9 +21,8 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.androidcode.Application.App;
-import com.example.androidcode.R;
-import com.example.androidcode.Units.Statusbar.SystemBarTintManager;
+import com.yw.gril.R;
+import com.yw.gril.Units.Statusbar.SystemBarTintManager;
 
 import java.util.ArrayList;
 
@@ -214,7 +213,7 @@ public class ViewUtil {
             try {
                 toFragment = toFragmentClass.newInstance();
                 toFragment.setArguments(args);
-            } catch (java.lang.InstantiationException e) {
+            } catch (InstantiationException e) {
                 e.printStackTrace();
             } catch (IllegalAccessException e) {
                 e.printStackTrace();

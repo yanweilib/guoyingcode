@@ -1,4 +1,4 @@
-package com.example.androidcode.Units;
+package com.yw.gril.Units;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,8 +10,6 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.view.View;
 
-import com.example.androidcode.Application.App;
-import com.example.androidcode.R;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.RequestParams;

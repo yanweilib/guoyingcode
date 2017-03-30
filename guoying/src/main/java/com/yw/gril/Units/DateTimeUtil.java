@@ -1,4 +1,4 @@
-package com.example.androidcode.Units;
+package com.yw.gril.Units;
 
 import android.os.Handler;
 import android.os.Message;
@@ -151,14 +151,14 @@ public class DateTimeUtil {
     public static String GetStringFromLong(long millis)
     {
         SimpleDateFormat sdf= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        java.util.Date dt = new Date(millis);
+        Date dt = new Date(millis);
         return sdf.format(dt);
     }
 
     public static String GetStringFromLong(long millis,String strFormat)
     {
         SimpleDateFormat sdf= new SimpleDateFormat(strFormat);
-        java.util.Date dt = new Date(millis);
+        Date dt = new Date(millis);
         return sdf.format(dt);
     }
 }

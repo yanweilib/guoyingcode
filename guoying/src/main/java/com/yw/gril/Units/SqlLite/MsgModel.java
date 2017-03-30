@@ -1,8 +1,8 @@
-package com.example.androidcode.Units.SqlLite;
+package com.yw.gril.Units.SqlLite;
 
 import android.text.format.DateUtils;
 
-import com.example.androidcode.Units.DateTimeUtil;
+import com.yw.gril.Units.DateTimeUtil;
 
 /**
  * Created by YSB on 2017/1/16.

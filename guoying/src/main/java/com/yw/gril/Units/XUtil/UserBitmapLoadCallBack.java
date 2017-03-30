@@ -1,14 +1,14 @@
-package com.example.androidcode.Units.XUtil;
+package com.yw.gril.Units.XUtil;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
-import com.example.androidcode.Units.BitmapUtil;
-import com.example.androidcode.Units.ImageUtil;
 import com.lidroid.xutils.bitmap.BitmapDisplayConfig;
 import com.lidroid.xutils.bitmap.callback.BitmapLoadCallBack;
 import com.lidroid.xutils.bitmap.callback.BitmapLoadFrom;
+import com.yw.gril.Units.BitmapUtil;
+import com.yw.gril.Units.ImageUtil;
 
 /**
  * Created by 伟 on 2016/11/26.
