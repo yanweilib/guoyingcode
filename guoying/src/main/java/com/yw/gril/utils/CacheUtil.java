@@ -7,14 +7,14 @@ import java.io.File;
 import java.math.BigDecimal;
 
 /**
- * <code>CacheUtils</code>
+ * <code>CacheUtil</code>
  * 缓存管理
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class CacheUtils {
+public class CacheUtil {
     /**
      * 获取缓存大小
      * @param context

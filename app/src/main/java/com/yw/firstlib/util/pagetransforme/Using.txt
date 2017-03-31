@@ -1,0 +1,4 @@
+ViewPage 特效
+
+用法：
+mViewPager.setPageTransformer(true, new DepthPageTransformer());

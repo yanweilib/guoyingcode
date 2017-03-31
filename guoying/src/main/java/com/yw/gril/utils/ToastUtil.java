@@ -6,20 +6,20 @@ import android.text.TextUtils;
 import android.widget.Toast;
 
 /**
- * <code>ToastUtils</code>
+ * <code>ToastUtil</code>
  * Tost统一管理类
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class ToastUtils {
+public class ToastUtil {
     private static Toast t;
     private static int duration;
 
     public static boolean isShow=true;
 
-    private ToastUtils()
+    private ToastUtil()
     {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
@@ -35,7 +35,7 @@ public class ToastUtils {
             return;
         }
         if (!TextUtils.isEmpty(msg) && context != null) {
-            if (ToastUtils.duration != duration) {
+            if (ToastUtil.duration != duration) {
                 if (t != null) {
                     t.cancel();
                 }
@@ -47,7 +47,7 @@ public class ToastUtils {
                     t.setText(msg);
                 }
             }
-            ToastUtils.duration = duration;
+            ToastUtil.duration = duration;
             t.show();
         }
     }

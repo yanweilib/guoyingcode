@@ -9,14 +9,14 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * <code>KeyBoardUtils</code>
+ * <code>KeyBoardUtil</code>
  * 软键盘工具类 打开，关闭，切换
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class KeyBoardUtils {
+public class KeyBoardUtil {
 
     /**
      * 切换键盘状态

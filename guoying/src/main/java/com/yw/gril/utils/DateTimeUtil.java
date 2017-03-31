@@ -16,14 +16,14 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 /**
- * <code>DateTimeUtils</code>
+ * <code>DateTimeUtil</code>
  * 时间处理
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class DateTimeUtils {
+public class DateTimeUtil {
 
     /**
      * timeToDate

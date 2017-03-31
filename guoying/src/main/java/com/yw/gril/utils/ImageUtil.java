@@ -24,14 +24,14 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 
 /**
- * <code>ImageUtils</code>
+ * <code>ImageUtil</code>
  * 图片处理工具类
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class ImageUtils {
+public class ImageUtil {
 
     /**
      * 图片去色,返回灰度图片

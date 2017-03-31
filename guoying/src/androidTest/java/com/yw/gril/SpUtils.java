@@ -1,6 +1,6 @@
 package com.yw.gril;
 
-import com.yw.gril.utils.SPUtils;
+import com.yw.gril.utils.SPUtil;
 
 /**
  * @author 闫伟
@@ -9,7 +9,7 @@ import com.yw.gril.utils.SPUtils;
  * @Description
  * @Date 2017/3/31 11:51
  */
-public class SpUtils extends SPUtils {
+public class SpUtils extends SPUtil {
     @Override
     public String toString() {
         put(null,"","");

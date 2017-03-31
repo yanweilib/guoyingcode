@@ -7,14 +7,14 @@ import android.os.StatFs;
 import java.io.File;
 
 /**
- * <code>FileUtils</code>
+ * <code>FileUtil</code>
  * 文件工具类
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class FileUtils {
+public class FileUtil {
 
     public static String separator = File.separator;
 

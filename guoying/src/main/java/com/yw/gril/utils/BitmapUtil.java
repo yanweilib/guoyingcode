@@ -18,14 +18,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * <code>BitmapFillet</code>
+ * <code>BitmapUtil</code>
  * 视图管理
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class BitmapUtils {
+public class BitmapUtil {
     /**
      * drawable 转 bitmap
      *

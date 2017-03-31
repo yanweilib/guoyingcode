@@ -11,14 +11,14 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
- * <code>SPUtils</code>
+ * <code>SPUtil</code>
  * SharedPreferences保存数据工具类
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class SPUtils {
+public class SPUtil {
     /**
      * 保存在手机里面的文件名
      */

@@ -8,16 +8,16 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 /**
- * <code>NetUtils</code>
+ * <code>NetUtil</code>
  * 网络工具类 是否有网络，是否是wifi
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class NetUtils {
+public class NetUtil {
 
-    private NetUtils()
+    private NetUtil()
     {
         /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");

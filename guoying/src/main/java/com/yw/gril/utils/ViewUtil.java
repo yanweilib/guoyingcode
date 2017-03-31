@@ -1,10 +1,6 @@
 package com.yw.gril.utils;
 
-import android.annotation.TargetApi;
-import android.app.Activity;
 import android.content.Context;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -15,15 +11,10 @@ import android.text.style.AbsoluteSizeSpan;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.GridView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import com.yw.gril.R;
-import com.yw.gril.tobeprocessed.SystemBarTintManager;
 
 import java.util.ArrayList;
 
@@ -129,7 +120,7 @@ public class ViewUtil {
         // 设置不同字符串的字号
         ArrayList<AbsoluteSizeSpan> absoluteSizeSpans = new ArrayList<AbsoluteSizeSpan>();
         for (int i = 0; i < text_size_list.size(); i++) {
-            absoluteSizeSpans.add(new AbsoluteSizeSpan(DensityUtils.sp2px(
+            absoluteSizeSpans.add(new AbsoluteSizeSpan(DensityUtil.sp2px(
                     context, text_size_list.get(i))));
         }
         for (int i = 0; i < str.size(); i++) {

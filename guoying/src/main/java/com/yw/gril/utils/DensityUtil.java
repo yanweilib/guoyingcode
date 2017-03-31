@@ -5,16 +5,16 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
 /**
- * <code>DensityUtils</code>
+ * <code>DensityUtil</code>
  * 单位转换类 dp,px,sp
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class DensityUtils {
+public class DensityUtil {
 
-    private DensityUtils() {
+    private DensityUtil() {
         /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");
     }

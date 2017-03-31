@@ -1,10 +1,12 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-version = "0.0.6"
-def siteUrl = 'https://github.com/KIDvsWEI/firstlib'
-def gitUrl = 'https://github.com/KIDvsWEI/firstlib.git'
+version = "0.0.8"
+def siteUrl = 'https://github.com/yanweilib/guoyingcode'
+def gitUrl = 'https://github.com/yanweilib/guoyingcode.git'
 group = "com.yw.gril"
+
+apply plugin:'maven'
 
 android {
     compileSdkVersion 23
@@ -35,6 +37,19 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
     testCompile 'junit:junit:4.12'
     compile files('src/main/libs/zxing-3.2.1.jar')
+}
+
+//github
+uploadArchives{
+    repositories.mavenDeployer{
+        def deployPath=file(getProperty('aar.maven'))
+        repository(url:"file://${deployPath.absolutePath}")
+        pom.project{
+            groupId "com.yw.gril"
+            artifactId "guoying"
+            version "0.0.8"
+        }
+    }
 }
 install {
     repositories.mavenInstaller {

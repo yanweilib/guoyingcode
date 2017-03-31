@@ -10,14 +10,14 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 /**
- * <code>AnimatorUtils</code>
+ * <code>AnimatorUtil</code>
  * 动画帮助类
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class AnimatorUtils {
+public class AnimatorUtil {
     /**
      * 上移下移 动画
      * @param view

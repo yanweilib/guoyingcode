@@ -9,15 +9,15 @@ import android.view.View;
 import android.view.WindowManager;
 
 /**
- * <code>ScreenUtils</code>
+ * <code>ScreenUtil</code>
  * 屏幕相关工具类
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class ScreenUtils {
-    private ScreenUtils() {
+public class ScreenUtil {
+    private ScreenUtil() {
         /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");
     }

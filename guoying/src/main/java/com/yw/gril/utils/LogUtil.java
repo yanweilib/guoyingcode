@@ -3,14 +3,14 @@ package com.yw.gril.utils;
 import android.util.Log;
 
 /**
- * <code>LogUtils</code>
+ * <code>LogUtil</code>
  * 日志工具类
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class LogUtils {
+public class LogUtil {
     public static int LOG_LEVEL=6;
     public final static int ERROR=1;
     public final static int WARN=2;

@@ -6,16 +6,16 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 
 /**
- * <code>AppUtils</code>
+ * <code>AppUtil</code>
  * 动画帮助类
  * @author YANWEI
  * @version 1.0.0
  * @see java.lang.Class
  * @since 2017/3/31 18:21
  */
-public class AppUtils {
+public class AppUtil {
 
-    private AppUtils() {
+    private AppUtil() {
         /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");
 
