@@ -6,8 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by 伟 on 2016/5/19.
- * Activity管理
+ * <code>ActivityCollector</code>
+ * 视图管理
+ * @author YANWEI
+ * @version 1.0.0
+ * @see java.lang.Class
+ * @since 2017/3/31 18:21
  */
 public class ActivityCollector {
     private static final String TAG="ActivityCollector";
