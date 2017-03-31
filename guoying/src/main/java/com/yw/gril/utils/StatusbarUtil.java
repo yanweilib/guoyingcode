@@ -6,14 +6,12 @@ import android.os.Build;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.yw.gril.tobeprocessed.SystemBarTintManager;
-
 /**
  * <code>StatusbarUtil</code>
  * 状态栏工具类
  * @author YANWEI
  * @version 1.0.0
- * @see java.lang.Class
+ * @see Class
  * @since 2017/3/31 18:21
  */
 public class StatusbarUtil {

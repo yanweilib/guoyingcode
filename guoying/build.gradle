@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-version = "0.0.8"
+version = "0.0.12"
 def siteUrl = 'https://github.com/yanweilib/guoyingcode'
 def gitUrl = 'https://github.com/yanweilib/guoyingcode.git'
 group = "com.yw.gril"
@@ -36,7 +36,8 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:23.3.0'
     testCompile 'junit:junit:4.12'
-    compile files('src/main/libs/zxing-3.2.1.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/zxing-3.2.1.jar')
 }
 
 //github
@@ -47,7 +48,7 @@ uploadArchives{
         pom.project{
             groupId "com.yw.gril"
             artifactId "guoying"
-            version "0.0.8"
+            version "0.0.12"
         }
     }
 }

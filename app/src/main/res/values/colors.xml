@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="zxing99000000">#99000000</color>
+    <color name="zxingC0000000">#C0000000</color>
+    <color name="zxingC0FFFF00">#C0FFFF00</color>
+    <color name="zxing282828">#282828</color>
+    <color name="zxingFFFFFF">#FFFFFF</color>
+    <color name="zxing9F9F9F">#9F9F9F</color>
 </resources>

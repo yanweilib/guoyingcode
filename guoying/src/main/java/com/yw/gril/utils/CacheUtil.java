@@ -17,8 +17,8 @@ import java.math.BigDecimal;
 public class CacheUtil {
     /**
      * 获取缓存大小
-     * @param context
-     * @return
+     * @param context context
+     * @return 缓存大小
      * @throws Exception
      */
     public static String getTotalCacheSize(Context context) throws Exception {
@@ -53,8 +53,8 @@ public class CacheUtil {
     /**
      * 格式化单位
      *
-     * @param size
-     * @return
+     * @param size dfa
+     * @return fs
      */
     public static String getFormatSize(double size) {
         double kiloByte = size / 1024;

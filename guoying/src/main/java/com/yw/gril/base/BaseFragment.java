@@ -50,7 +50,6 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
         }
     }
 
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mViews=new SparseArray<>();

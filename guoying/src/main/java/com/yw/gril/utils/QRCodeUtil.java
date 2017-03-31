@@ -19,7 +19,7 @@ import java.util.Hashtable;
  * 二维码工具类
  * @author YANWEI
  * @version 1.0.0
- * @see java.lang.Class
+ * @see Class
  * @since 2017/3/31 18:21
  */
 public class QRCodeUtil {
