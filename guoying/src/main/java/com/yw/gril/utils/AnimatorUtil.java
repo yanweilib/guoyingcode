@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2017/4/6. 闫伟 Inc. All rights reserved.
+ */
 package com.yw.gril.utils;
 
 import android.animation.ValueAnimator;

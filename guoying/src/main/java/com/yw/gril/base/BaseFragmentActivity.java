@@ -20,7 +20,7 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements V
     public abstract void processClick(View v);
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mViews=new SparseArray<>();
         setContentView(getLayoutId());

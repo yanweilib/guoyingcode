@@ -48,7 +48,7 @@ uploadArchives{
         pom.project{
             groupId "com.yw.gril"
             artifactId "guoying"
-            version "0.0.12"
+            version "0.0.13"
         }
     }
 }
