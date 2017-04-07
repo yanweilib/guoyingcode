@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-version = "0.0.12"
+version = "1.0.14"
 def siteUrl = 'https://github.com/yanweilib/guoyingcode'
 def gitUrl = 'https://github.com/yanweilib/guoyingcode.git'
 group = "com.yw.gril"
@@ -48,7 +48,7 @@ uploadArchives{
         pom.project{
             groupId "com.yw.gril"
             artifactId "guoying"
-            version "0.0.13"
+            version "1.0.14"
         }
     }
 }
